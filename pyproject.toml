@@ -1,0 +1,40 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "datos-demre"
+version = "0.1.0"
+description = "Repositorio de Procesamiento de Datos del Portal de Datos del DEMRE."
+authors = ["Vicente Agüero <vicenteaguero@uc.cl>"]
+packages = [
+    { include = "datos_demre", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "*"
+tqdm = "*"
+matplotlib = "*"
+numpy = "*"
+rarfile = "*"
+bs4 = "*"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+black = "^23.7.0"
+isort = "^5.10.1"
+pytest = "^8.3.4"
+
+[tool.black]
+line-length = 100
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+python_files = ["*.py"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
