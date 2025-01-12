@@ -19,7 +19,7 @@ RAW_FOLDER = 'raw'
 
 ################################################################################
 
-ROOT_PATH = os.path.join(os.getcwd())
+ROOT_PATH = os.path.join(os.getcwd(), '..')
 
 DATA_PATH = os.path.join(ROOT_PATH, DATA_FOLDER)
 
