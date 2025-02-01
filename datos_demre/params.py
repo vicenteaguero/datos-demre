@@ -19,7 +19,7 @@ RAW_FOLDER = 'raw'
 
 ################################################################################
 
-ROOT_PATH = os.path.join(os.getcwd(), '..')
+ROOT_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 DATA_PATH = os.path.join(ROOT_PATH, DATA_FOLDER)
 
@@ -31,3 +31,8 @@ RAW_RAR_DEMRE_OPEN_PATH = os.path.join(RAW_DEMRE_OPEN_PATH, RAR_FOLDER)
 RAW_DATABASES_DEMRE_OPEN_PATH = os.path.join(RAW_DEMRE_OPEN_PATH, DATABASES_FOLDER)
 RAW_FILES_DEMRE_OPEN_PATH = os.path.join(RAW_DATABASES_DEMRE_OPEN_PATH, FILES_FOLDER)
 RAW_DICTIONARIES_DEMRE_OPEN_PATH = os.path.join(RAW_DATABASES_DEMRE_OPEN_PATH, DICTIONARIES_FOLDER)
+
+PRIMARY_PATH = os.path.join(DATA_PATH, 'primary')
+PRIMARY_DEMRE_PATH = os.path.join(PRIMARY_PATH, DEMRE_FOLDER)
+PRIMARY_DEMRE_OPEN_PATH = os.path.join(PRIMARY_PATH, DEMRE_OPEN_FOLDER)
+PRIMARY_DATABASES_DEMRE_OPEN_PATH = os.path.join(PRIMARY_DEMRE_OPEN_PATH, DATABASES_FOLDER)
