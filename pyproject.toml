@@ -17,6 +17,7 @@ matplotlib = "*"
 numpy = "*"
 rarfile = "*"
 bs4 = "*"
+pyarrow = "^19.0.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
