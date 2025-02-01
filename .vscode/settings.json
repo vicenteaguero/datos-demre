@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "general",
         "library",
-        "data"
+        "data",
+        "notebooks"
     ]
 }
